@@ -1,16 +1,27 @@
-## Hi there 👋
+<div align="center">
+  <img src="matrix.svg" alt="Matrix Code Rain" width="100%"/>
+</div>
 
-<!--
-**XxxGHOSTX/XxxGHOSTX** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<div align="center">
 
-Here are some ideas to get you started:
+# 👾 XxxGHOSTX
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+*"There is no spoon."*
+
+</div>
+
+---
+
+- 🔭 I'm currently working on something in the shadows...
+- �� I'm currently learning everything I can get my hands on
+- 👯 I'm looking to collaborate on open-source and creative projects
+- 💬 Ask me about code, security, and the digital underground
+- ⚡ Fun fact: The Matrix is everywhere
+
+---
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=XxxGHOSTX&show_icons=true&theme=matrix&hide_border=true&bg_color=000000&title_color=00ff41&text_color=00ff41&icon_color=00ff41)
+
+</div>

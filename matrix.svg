@@ -1,0 +1,529 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .bg { fill: #000; }
+      .col { font-family: 'Courier New', monospace; font-size: 14px; fill: #00ff41; }
+      .col-dim { font-family: 'Courier New', monospace; font-size: 14px; fill: #003b00; }
+      .col-head { font-family: 'Courier New', monospace; font-size: 14px; fill: #ccffcc; }
+
+      @keyframes fall0  { 0%{transform:translateY(-400px)} 100%{transform:translateY(400px)} }
+      @keyframes fall1  { 0%{transform:translateY(-420px)} 100%{transform:translateY(400px)} }
+      @keyframes fall2  { 0%{transform:translateY(-380px)} 100%{transform:translateY(400px)} }
+      @keyframes fall3  { 0%{transform:translateY(-360px)} 100%{transform:translateY(400px)} }
+      @keyframes fall4  { 0%{transform:translateY(-440px)} 100%{transform:translateY(400px)} }
+      @keyframes fall5  { 0%{transform:translateY(-460px)} 100%{transform:translateY(400px)} }
+      @keyframes fall6  { 0%{transform:translateY(-340px)} 100%{transform:translateY(400px)} }
+      @keyframes fall7  { 0%{transform:translateY(-320px)} 100%{transform:translateY(400px)} }
+      @keyframes fall8  { 0%{transform:translateY(-480px)} 100%{transform:translateY(400px)} }
+      @keyframes fall9  { 0%{transform:translateY(-300px)} 100%{transform:translateY(400px)} }
+      @keyframes fall10 { 0%{transform:translateY(-500px)} 100%{transform:translateY(400px)} }
+      @keyframes fall11 { 0%{transform:translateY(-280px)} 100%{transform:translateY(400px)} }
+      @keyframes fall12 { 0%{transform:translateY(-260px)} 100%{transform:translateY(400px)} }
+      @keyframes fall13 { 0%{transform:translateY(-520px)} 100%{transform:translateY(400px)} }
+      @keyframes fall14 { 0%{transform:translateY(-240px)} 100%{transform:translateY(400px)} }
+      @keyframes fall15 { 0%{transform:translateY(-540px)} 100%{transform:translateY(400px)} }
+      @keyframes fall16 { 0%{transform:translateY(-220px)} 100%{transform:translateY(400px)} }
+      @keyframes fall17 { 0%{transform:translateY(-560px)} 100%{transform:translateY(400px)} }
+      @keyframes fall18 { 0%{transform:translateY(-200px)} 100%{transform:translateY(400px)} }
+      @keyframes fall19 { 0%{transform:translateY(-580px)} 100%{transform:translateY(400px)} }
+      @keyframes fall20 { 0%{transform:translateY(-180px)} 100%{transform:translateY(400px)} }
+      @keyframes fall21 { 0%{transform:translateY(-600px)} 100%{transform:translateY(400px)} }
+      @keyframes fall22 { 0%{transform:translateY(-160px)} 100%{transform:translateY(400px)} }
+      @keyframes fall23 { 0%{transform:translateY(-620px)} 100%{transform:translateY(400px)} }
+      @keyframes fall24 { 0%{transform:translateY(-140px)} 100%{transform:translateY(400px)} }
+      @keyframes fall25 { 0%{transform:translateY(-640px)} 100%{transform:translateY(400px)} }
+      @keyframes fall26 { 0%{transform:translateY(-120px)} 100%{transform:translateY(400px)} }
+      @keyframes fall27 { 0%{transform:translateY(-660px)} 100%{transform:translateY(400px)} }
+      @keyframes fall28 { 0%{transform:translateY(-100px)} 100%{transform:translateY(400px)} }
+      @keyframes fall29 { 0%{transform:translateY(-680px)} 100%{transform:translateY(400px)} }
+      @keyframes fall30 { 0%{transform:translateY(-80px)}  100%{transform:translateY(400px)} }
+      @keyframes fall31 { 0%{transform:translateY(-700px)} 100%{transform:translateY(400px)} }
+      @keyframes fall32 { 0%{transform:translateY(-720px)} 100%{transform:translateY(400px)} }
+      @keyframes fall33 { 0%{transform:translateY(-60px)}  100%{transform:translateY(400px)} }
+      @keyframes fall34 { 0%{transform:translateY(-740px)} 100%{transform:translateY(400px)} }
+      @keyframes fall35 { 0%{transform:translateY(-760px)} 100%{transform:translateY(400px)} }
+      @keyframes fall36 { 0%{transform:translateY(-40px)}  100%{transform:translateY(400px)} }
+      @keyframes fall37 { 0%{transform:translateY(-780px)} 100%{transform:translateY(400px)} }
+      @keyframes fall38 { 0%{transform:translateY(-800px)} 100%{transform:translateY(400px)} }
+      @keyframes fall39 { 0%{transform:translateY(-820px)} 100%{transform:translateY(400px)} }
+      @keyframes fall40 { 0%{transform:translateY(-20px)}  100%{transform:translateY(400px)} }
+      @keyframes fall41 { 0%{transform:translateY(-840px)} 100%{transform:translateY(400px)} }
+      @keyframes fall42 { 0%{transform:translateY(-860px)} 100%{transform:translateY(400px)} }
+      @keyframes fall43 { 0%{transform:translateY(-880px)} 100%{transform:translateY(400px)} }
+      @keyframes fall44 { 0%{transform:translateY(-900px)} 100%{transform:translateY(400px)} }
+      @keyframes fall45 { 0%{transform:translateY(-920px)} 100%{transform:translateY(400px)} }
+      @keyframes fall46 { 0%{transform:translateY(-940px)} 100%{transform:translateY(400px)} }
+      @keyframes fall47 { 0%{transform:translateY(-960px)} 100%{transform:translateY(400px)} }
+      @keyframes fall48 { 0%{transform:translateY(-980px)} 100%{transform:translateY(400px)} }
+      @keyframes fall49 { 0%{transform:translateY(-1000px)} 100%{transform:translateY(400px)} }
+
+      /* Column streams: each `g` element is one falling column strip */
+      .s0  { animation: fall0  2.1s linear infinite; }
+      .s1  { animation: fall1  1.7s linear infinite; }
+      .s2  { animation: fall2  2.5s linear infinite; }
+      .s3  { animation: fall3  1.9s linear infinite; }
+      .s4  { animation: fall4  2.3s linear infinite; }
+      .s5  { animation: fall5  1.5s linear infinite; }
+      .s6  { animation: fall6  2.7s linear infinite; }
+      .s7  { animation: fall7  2.0s linear infinite; }
+      .s8  { animation: fall8  1.6s linear infinite; }
+      .s9  { animation: fall9  2.4s linear infinite; }
+      .s10 { animation: fall10 1.8s linear infinite; }
+      .s11 { animation: fall11 2.6s linear infinite; }
+      .s12 { animation: fall12 2.2s linear infinite; }
+      .s13 { animation: fall13 1.4s linear infinite; }
+      .s14 { animation: fall14 2.8s linear infinite; }
+      .s15 { animation: fall15 1.9s linear infinite; }
+      .s16 { animation: fall16 2.1s linear infinite; }
+      .s17 { animation: fall17 1.7s linear infinite; }
+      .s18 { animation: fall18 2.3s linear infinite; }
+      .s19 { animation: fall19 1.5s linear infinite; }
+      .s20 { animation: fall20 2.5s linear infinite; }
+      .s21 { animation: fall21 2.0s linear infinite; }
+      .s22 { animation: fall22 1.6s linear infinite; }
+      .s23 { animation: fall23 2.4s linear infinite; }
+      .s24 { animation: fall24 1.8s linear infinite; }
+      .s25 { animation: fall25 2.6s linear infinite; }
+      .s26 { animation: fall26 2.2s linear infinite; }
+      .s27 { animation: fall27 1.4s linear infinite; }
+      .s28 { animation: fall28 2.8s linear infinite; }
+      .s29 { animation: fall29 2.1s linear infinite; }
+      .s30 { animation: fall30 1.9s linear infinite; }
+      .s31 { animation: fall31 1.7s linear infinite; }
+      .s32 { animation: fall32 2.3s linear infinite; }
+      .s33 { animation: fall33 1.5s linear infinite; }
+      .s34 { animation: fall34 2.7s linear infinite; }
+      .s35 { animation: fall35 2.0s linear infinite; }
+      .s36 { animation: fall36 1.6s linear infinite; }
+      .s37 { animation: fall37 2.4s linear infinite; }
+      .s38 { animation: fall38 1.8s linear infinite; }
+      .s39 { animation: fall39 2.6s linear infinite; }
+      .s40 { animation: fall40 2.2s linear infinite; }
+      .s41 { animation: fall41 1.4s linear infinite; }
+      .s42 { animation: fall42 2.9s linear infinite; }
+      .s43 { animation: fall43 1.9s linear infinite; }
+      .s44 { animation: fall44 2.1s linear infinite; }
+      .s45 { animation: fall45 1.7s linear infinite; }
+      .s46 { animation: fall46 2.3s linear infinite; }
+      .s47 { animation: fall47 1.5s linear infinite; }
+      .s48 { animation: fall48 2.5s linear infinite; }
+      .s49 { animation: fall49 2.0s linear infinite; }
+    </style>
+    <!-- Fade gradient so characters dim toward top -->
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#000" stop-opacity="1"/>
+      <stop offset="30%"  stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="fadeMask">
+      <rect width="800" height="400" fill="url(#fade)"/>
+    </mask>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="800" height="400"/>
+
+  <!-- ── Column 0  x=8 ── -->
+  <g class="s0 col" transform="translate(8,0)">
+    <text y="0">ﾊ</text><text y="14">ﾐ</text><text y="28">ﾋ</text><text y="42">ｰ</text><text y="56">ｳ</text>
+    <text y="70">ｼ</text><text y="84">ﾅ</text><text y="98">ﾓ</text><text y="112">ﾆ</text><text y="126">ｻ</text>
+    <text y="140">ﾜ</text><text y="154">ﾂ</text><text y="168">ｵ</text><text y="182">ﾘ</text><text y="196">ｱ</text>
+    <text y="210">ﾎ</text><text y="224">ﾃ</text><text y="238">ﾏ</text><text y="252">ｹ</text><text y="266">ﾒ</text>
+    <text y="280" class="col-head">F</text>
+  </g>
+  <!-- ── Column 1  x=24 ── -->
+  <g class="s1 col" transform="translate(24,0)">
+    <text y="0">1</text><text y="14">0</text><text y="28">1</text><text y="42">1</text><text y="56">0</text>
+    <text y="70">0</text><text y="84">1</text><text y="98">1</text><text y="112">0</text><text y="126">1</text>
+    <text y="140">0</text><text y="154">1</text><text y="168">1</text><text y="182">0</text><text y="196">0</text>
+    <text y="210">1</text><text y="224">0</text><text y="238">1</text><text y="252">0</text><text y="266">0</text>
+    <text y="280" class="col-head">1</text>
+  </g>
+  <!-- ── Column 2  x=40 ── -->
+  <g class="s2 col" transform="translate(40,0)">
+    <text y="0">ｦ</text><text y="14">ｲ</text><text y="28">ｸ</text><text y="42">ｺ</text><text y="56">ｿ</text>
+    <text y="70">ﾁ</text><text y="84">ﾄ</text><text y="98">ﾉ</text><text y="112">ﾌ</text><text y="126">ﾔ</text>
+    <text y="140">ﾗ</text><text y="154">ﾛ</text><text y="168">ﾝ</text><text y="182">0</text><text y="196">1</text>
+    <text y="210">Z</text><text y="224">7</text><text y="238">ﾆ</text><text y="252">ｻ</text><text y="266">ﾜ</text>
+    <text y="280" class="col-head">ﾂ</text>
+  </g>
+  <!-- ── Column 3  x=56 ── -->
+  <g class="s3 col" transform="translate(56,0)">
+    <text y="0">T</text><text y="14">H</text><text y="28">E</text><text y="42"> </text><text y="56">M</text>
+    <text y="70">A</text><text y="84">T</text><text y="98">R</text><text y="112">I</text><text y="126">X</text>
+    <text y="140">9</text><text y="154">4</text><text y="168">7</text><text y="182">2</text><text y="196">0</text>
+    <text y="210">ﾆ</text><text y="224">ｹ</text><text y="238">ｱ</text><text y="252">ﾄ</text><text y="266">ｵ</text>
+    <text y="280" class="col-head">X</text>
+  </g>
+  <!-- ── Column 4  x=72 ── -->
+  <g class="s4 col" transform="translate(72,0)">
+    <text y="0">ﾊ</text><text y="14">ｦ</text><text y="28">3</text><text y="42">Z</text><text y="56">ﾋ</text>
+    <text y="70">9</text><text y="84">8</text><text y="98">ﾅ</text><text y="112">Q</text><text y="126">ﾓ</text>
+    <text y="140">5</text><text y="154">2</text><text y="168">ｴ</text><text y="182">ｱ</text><text y="196">ﾘ</text>
+    <text y="210">1</text><text y="224">0</text><text y="238">ﾎ</text><text y="252">ﾒ</text><text y="266">7</text>
+    <text y="280" class="col-head">3</text>
+  </g>
+  <!-- ── Column 5  x=88 ── -->
+  <g class="s5 col" transform="translate(88,0)">
+    <text y="0">ﾐ</text><text y="14">ｲ</text><text y="28">6</text><text y="42">ﾁ</text><text y="56">P</text>
+    <text y="70">ﾔ</text><text y="84">ﾛ</text><text y="98">0</text><text y="112">1</text><text y="126">ｸ</text>
+    <text y="140">ﾝ</text><text y="154">S</text><text y="168">K</text><text y="182">ﾏ</text><text y="196">ｰ</text>
+    <text y="210">ﾃ</text><text y="224">ｹ</text><text y="238">4</text><text y="252">ｿ</text><text y="266">ｻ</text>
+    <text y="280" class="col-head">W</text>
+  </g>
+  <!-- ── Column 6  x=104 ── -->
+  <g class="s6 col" transform="translate(104,0)">
+    <text y="0">0</text><text y="14">1</text><text y="28">ﾕ</text><text y="42">ﾙ</text><text y="56">ﾞ</text>
+    <text y="70">8</text><text y="84">N</text><text y="98">ﾊ</text><text y="112">3</text><text y="126">V</text>
+    <text y="140">ｵ</text><text y="154">ﾜ</text><text y="168">5</text><text y="182">D</text><text y="196">ﾆ</text>
+    <text y="210">ｻ</text><text y="224">2</text><text y="238">ﾂ</text><text y="252">ｱ</text><text y="266">6</text>
+    <text y="280" class="col-head">ﾘ</text>
+  </g>
+  <!-- ── Column 7  x=120 ── -->
+  <g class="s7 col" transform="translate(120,0)">
+    <text y="0">ﾈ</text><text y="14">ｺ</text><text y="28">1</text><text y="42">A</text><text y="56">ﾓ</text>
+    <text y="70">ｰ</text><text y="84">ｳ</text><text y="98">ﾗ</text><text y="112">Z</text><text y="126">ｼ</text>
+    <text y="140">ﾅ</text><text y="154">7</text><text y="168">ﾆ</text><text y="182">ｻ</text><text y="196">4</text>
+    <text y="210">ﾔ</text><text y="224">ｹ</text><text y="238">0</text><text y="252">ﾒ</text><text y="266">9</text>
+    <text y="280" class="col-head">ﾊ</text>
+  </g>
+  <!-- ── Column 8  x=136 ── -->
+  <g class="s8 col" transform="translate(136,0)">
+    <text y="0">1</text><text y="14">1</text><text y="28">0</text><text y="42">0</text><text y="56">1</text>
+    <text y="70">ﾋ</text><text y="84">ｦ</text><text y="98">1</text><text y="112">0</text><text y="126">ﾁ</text>
+    <text y="140">ﾌ</text><text y="154">ﾔ</text><text y="168">ﾛ</text><text y="182">ﾝ</text><text y="196">8</text>
+    <text y="210">5</text><text y="224">3</text><text y="238">ﾉ</text><text y="252">ｴ</text><text y="266">ｱ</text>
+    <text y="280" class="col-head">0</text>
+  </g>
+  <!-- ── Column 9  x=152 ── -->
+  <g class="s9 col" transform="translate(152,0)">
+    <text y="0">ﾎ</text><text y="14">ﾃ</text><text y="28">B</text><text y="42">ﾏ</text><text y="56">2</text>
+    <text y="70">ﾒ</text><text y="84">K</text><text y="98">ﾜ</text><text y="112">ﾂ</text><text y="126">L</text>
+    <text y="140">ｵ</text><text y="154">0</text><text y="168">ﾘ</text><text y="182">ｱ</text><text y="196">9</text>
+    <text y="210">7</text><text y="224">ｹ</text><text y="238">4</text><text y="252">ｻ</text><text y="266">1</text>
+    <text y="280" class="col-head">ﾆ</text>
+  </g>
+  <!-- ── Column 10  x=168 ── -->
+  <g class="s10 col" transform="translate(168,0)">
+    <text y="0">ｦ</text><text y="14">ﾕ</text><text y="28">ｸ</text><text y="42">ﾙ</text><text y="56">ﾞ</text>
+    <text y="70">3</text><text y="84">C</text><text y="98">ﾊ</text><text y="112">ﾊ</text><text y="126">6</text>
+    <text y="140">R</text><text y="154">ﾓ</text><text y="168">ﾆ</text><text y="182">ｻ</text><text y="196">ﾜ</text>
+    <text y="210">ﾂ</text><text y="224">ｵ</text><text y="238">ﾘ</text><text y="252">ｱ</text><text y="266">5</text>
+    <text y="280" class="col-head">ﾎ</text>
+  </g>
+  <!-- ── Column 11  x=184 ── -->
+  <g class="s11 col" transform="translate(184,0)">
+    <text y="0">ﾃ</text><text y="14">ﾏ</text><text y="28">ｹ</text><text y="42">ﾒ</text><text y="56">0</text>
+    <text y="70">1</text><text y="84">ﾋ</text><text y="98">ｦ</text><text y="112">ﾁ</text><text y="126">ﾌ</text>
+    <text y="140">ﾔ</text><text y="154">ﾛ</text><text y="168">ﾝ</text><text y="182">8</text><text y="196">N</text>
+    <text y="210">ﾈ</text><text y="224">ｺ</text><text y="238">ﾓ</text><text y="252">ｰ</text><text y="266">ｳ</text>
+    <text y="280" class="col-head">ﾗ</text>
+  </g>
+  <!-- ── Column 12  x=200 ── -->
+  <g class="s12 col" transform="translate(200,0)">
+    <text y="0">Z</text><text y="14">ｼ</text><text y="28">ﾅ</text><text y="42">7</text><text y="56">ﾆ</text>
+    <text y="70">ｻ</text><text y="84">4</text><text y="98">ﾔ</text><text y="112">ｹ</text><text y="126">0</text>
+    <text y="140">ﾒ</text><text y="154">9</text><text y="168">ﾊ</text><text y="182">1</text><text y="196">1</text>
+    <text y="210">0</text><text y="224">0</text><text y="238">1</text><text y="252">ﾋ</text><text y="266">ｦ</text>
+    <text y="280" class="col-head">ﾁ</text>
+  </g>
+  <!-- ── Column 13  x=216 ── -->
+  <g class="s13 col" transform="translate(216,0)">
+    <text y="0">ﾌ</text><text y="14">ﾔ</text><text y="28">ﾛ</text><text y="42">ﾝ</text><text y="56">8</text>
+    <text y="70">5</text><text y="84">3</text><text y="98">ﾉ</text><text y="112">ｴ</text><text y="126">ｱ</text>
+    <text y="140">G</text><text y="154">H</text><text y="168">O</text><text y="182">S</text><text y="196">T</text>
+    <text y="210">X</text><text y="224">2</text><text y="238">ｺ</text><text y="252">ﾓ</text><text y="266">ｰ</text>
+    <text y="280" class="col-head">ｳ</text>
+  </g>
+  <!-- ── Column 14  x=232 ── -->
+  <g class="s14 col" transform="translate(232,0)">
+    <text y="0">ﾗ</text><text y="14">Z</text><text y="28">ｼ</text><text y="42">ﾅ</text><text y="56">7</text>
+    <text y="70">ﾆ</text><text y="84">ｻ</text><text y="98">4</text><text y="112">ﾔ</text><text y="126">ｹ</text>
+    <text y="140">0</text><text y="154">ﾒ</text><text y="168">9</text><text y="182">ﾊ</text><text y="196">1</text>
+    <text y="210">ﾋ</text><text y="224">ｦ</text><text y="238">ﾁ</text><text y="252">ﾌ</text><text y="266">ﾔ</text>
+    <text y="280" class="col-head">ﾛ</text>
+  </g>
+  <!-- ── Column 15  x=248 ── -->
+  <g class="s15 col" transform="translate(248,0)">
+    <text y="0">ﾝ</text><text y="14">8</text><text y="28">5</text><text y="42">3</text><text y="56">ﾉ</text>
+    <text y="70">ｴ</text><text y="84">ｱ</text><text y="98">0</text><text y="112">1</text><text y="126">ﾋ</text>
+    <text y="140">ｦ</text><text y="154">ﾁ</text><text y="168">ﾌ</text><text y="182">ﾔ</text><text y="196">ﾛ</text>
+    <text y="210">ﾝ</text><text y="224">N</text><text y="238">ﾈ</text><text y="252">ｺ</text><text y="266">ﾓ</text>
+    <text y="280" class="col-head">ｰ</text>
+  </g>
+  <!-- ── Column 16  x=264 ── -->
+  <g class="s16 col" transform="translate(264,0)">
+    <text y="0">ｳ</text><text y="14">ﾗ</text><text y="28">Z</text><text y="42">ｼ</text><text y="56">ﾅ</text>
+    <text y="70">7</text><text y="84">ﾆ</text><text y="98">ｻ</text><text y="112">4</text><text y="126">ﾔ</text>
+    <text y="140">ｹ</text><text y="154">0</text><text y="168">ﾒ</text><text y="182">9</text><text y="196">ﾊ</text>
+    <text y="210">1</text><text y="224">ﾋ</text><text y="238">ｦ</text><text y="252">ﾁ</text><text y="266">ﾌ</text>
+    <text y="280" class="col-head">ﾔ</text>
+  </g>
+  <!-- ── Column 17  x=280 ── -->
+  <g class="s17 col" transform="translate(280,0)">
+    <text y="0">ﾛ</text><text y="14">ﾝ</text><text y="28">8</text><text y="42">5</text><text y="56">3</text>
+    <text y="70">ﾉ</text><text y="84">ｴ</text><text y="98">ｱ</text><text y="112">0</text><text y="126">1</text>
+    <text y="140">ﾋ</text><text y="154">ｦ</text><text y="168">ﾁ</text><text y="182">ﾌ</text><text y="196">ﾔ</text>
+    <text y="210">ﾛ</text><text y="224">ﾝ</text><text y="238">N</text><text y="252">ﾈ</text><text y="266">ｺ</text>
+    <text y="280" class="col-head">ﾓ</text>
+  </g>
+  <!-- ── Column 18  x=296 ── -->
+  <g class="s18 col" transform="translate(296,0)">
+    <text y="0">ｰ</text><text y="14">ｳ</text><text y="28">ﾗ</text><text y="42">Z</text><text y="56">ｼ</text>
+    <text y="70">ﾅ</text><text y="84">7</text><text y="98">ﾆ</text><text y="112">ｻ</text><text y="126">4</text>
+    <text y="140">ﾔ</text><text y="154">ｹ</text><text y="168">0</text><text y="182">ﾒ</text><text y="196">9</text>
+    <text y="210">ﾊ</text><text y="224">1</text><text y="238">ﾋ</text><text y="252">ｦ</text><text y="266">ﾁ</text>
+    <text y="280" class="col-head">ﾌ</text>
+  </g>
+  <!-- ── Column 19  x=312 ── -->
+  <g class="s19 col" transform="translate(312,0)">
+    <text y="0">1</text><text y="14">0</text><text y="28">0</text><text y="42">1</text><text y="56">1</text>
+    <text y="70">0</text><text y="84">1</text><text y="98">0</text><text y="112">0</text><text y="126">1</text>
+    <text y="140">1</text><text y="154">0</text><text y="168">1</text><text y="182">0</text><text y="196">0</text>
+    <text y="210">1</text><text y="224">1</text><text y="238">0</text><text y="252">0</text><text y="266">1</text>
+    <text y="280" class="col-head">0</text>
+  </g>
+  <!-- ── Column 20  x=328 ── -->
+  <g class="s20 col" transform="translate(328,0)">
+    <text y="0">ﾊ</text><text y="14">ﾐ</text><text y="28">ﾋ</text><text y="42">ｰ</text><text y="56">ｳ</text>
+    <text y="70">ｼ</text><text y="84">ﾅ</text><text y="98">ﾓ</text><text y="112">ﾆ</text><text y="126">ｻ</text>
+    <text y="140">ﾜ</text><text y="154">ﾂ</text><text y="168">ｵ</text><text y="182">ﾘ</text><text y="196">ｱ</text>
+    <text y="210">ﾎ</text><text y="224">ﾃ</text><text y="238">ﾏ</text><text y="252">ｹ</text><text y="266">ﾒ</text>
+    <text y="280" class="col-head">6</text>
+  </g>
+  <!-- ── Column 21  x=344 ── -->
+  <g class="s21 col" transform="translate(344,0)">
+    <text y="0">ｦ</text><text y="14">ｲ</text><text y="28">ｸ</text><text y="42">ｺ</text><text y="56">ｿ</text>
+    <text y="70">ﾁ</text><text y="84">ﾄ</text><text y="98">ﾉ</text><text y="112">ﾌ</text><text y="126">ﾔ</text>
+    <text y="140">ﾗ</text><text y="154">ﾛ</text><text y="168">ﾝ</text><text y="182">0</text><text y="196">1</text>
+    <text y="210">Z</text><text y="224">7</text><text y="238">ﾆ</text><text y="252">ｻ</text><text y="266">ﾜ</text>
+    <text y="280" class="col-head">ﾂ</text>
+  </g>
+  <!-- ── Column 22  x=360 ── -->
+  <g class="s22 col" transform="translate(360,0)">
+    <text y="0">ｵ</text><text y="14">ﾘ</text><text y="28">ｱ</text><text y="42">ﾎ</text><text y="56">ﾃ</text>
+    <text y="70">ﾏ</text><text y="84">ｹ</text><text y="98">ﾒ</text><text y="112">8</text><text y="126">5</text>
+    <text y="140">3</text><text y="154">N</text><text y="168">ﾈ</text><text y="182">ｺ</text><text y="196">ﾓ</text>
+    <text y="210">ｰ</text><text y="224">ｳ</text><text y="238">ﾗ</text><text y="252">Z</text><text y="266">ｼ</text>
+    <text y="280" class="col-head">ﾅ</text>
+  </g>
+  <!-- ── Column 23  x=376 ── -->
+  <g class="s23 col" transform="translate(376,0)">
+    <text y="0">7</text><text y="14">ﾆ</text><text y="28">ｻ</text><text y="42">4</text><text y="56">ﾔ</text>
+    <text y="70">ｹ</text><text y="84">0</text><text y="98">ﾒ</text><text y="112">9</text><text y="126">ﾊ</text>
+    <text y="140">1</text><text y="154">ﾋ</text><text y="168">ｦ</text><text y="182">ﾁ</text><text y="196">ﾌ</text>
+    <text y="210">ﾔ</text><text y="224">ﾛ</text><text y="238">ﾝ</text><text y="252">8</text><text y="266">5</text>
+    <text y="280" class="col-head">3</text>
+  </g>
+  <!-- ── Column 24  x=392 ── -->
+  <g class="s24 col" transform="translate(392,0)">
+    <text y="0">ﾉ</text><text y="14">ｴ</text><text y="28">ｱ</text><text y="42">0</text><text y="56">1</text>
+    <text y="70">ﾋ</text><text y="84">ｦ</text><text y="98">ﾁ</text><text y="112">ﾌ</text><text y="126">ﾔ</text>
+    <text y="140">ﾛ</text><text y="154">ﾝ</text><text y="168">N</text><text y="182">ﾈ</text><text y="196">ｺ</text>
+    <text y="210">ﾓ</text><text y="224">ｰ</text><text y="238">ｳ</text><text y="252">ﾗ</text><text y="266">Z</text>
+    <text y="280" class="col-head">ｼ</text>
+  </g>
+  <!-- ── Column 25  x=408 ── -->
+  <g class="s25 col" transform="translate(408,0)">
+    <text y="0">ﾅ</text><text y="14">7</text><text y="28">ﾆ</text><text y="42">ｻ</text><text y="56">4</text>
+    <text y="70">ﾔ</text><text y="84">ｹ</text><text y="98">0</text><text y="112">ﾒ</text><text y="126">9</text>
+    <text y="140">ﾊ</text><text y="154">1</text><text y="168">ﾋ</text><text y="182">ｦ</text><text y="196">ﾁ</text>
+    <text y="210">ﾌ</text><text y="224">ﾔ</text><text y="238">ﾛ</text><text y="252">ﾝ</text><text y="266">8</text>
+    <text y="280" class="col-head">5</text>
+  </g>
+  <!-- ── Column 26  x=424 ── -->
+  <g class="s26 col" transform="translate(424,0)">
+    <text y="0">3</text><text y="14">ﾉ</text><text y="28">ｴ</text><text y="42">ｱ</text><text y="56">0</text>
+    <text y="70">1</text><text y="84">ﾋ</text><text y="98">ｦ</text><text y="112">ﾁ</text><text y="126">ﾌ</text>
+    <text y="140">ﾔ</text><text y="154">ﾛ</text><text y="168">ﾝ</text><text y="182">N</text><text y="196">ﾈ</text>
+    <text y="210">ｺ</text><text y="224">ﾓ</text><text y="238">ｰ</text><text y="252">ｳ</text><text y="266">ﾗ</text>
+    <text y="280" class="col-head">Z</text>
+  </g>
+  <!-- ── Column 27  x=440 ── -->
+  <g class="s27 col" transform="translate(440,0)">
+    <text y="0">ｼ</text><text y="14">ﾅ</text><text y="28">7</text><text y="42">ﾆ</text><text y="56">ｻ</text>
+    <text y="70">4</text><text y="84">ﾔ</text><text y="98">ｹ</text><text y="112">0</text><text y="126">ﾒ</text>
+    <text y="140">9</text><text y="154">ﾊ</text><text y="168">1</text><text y="182">ﾋ</text><text y="196">ｦ</text>
+    <text y="210">ﾁ</text><text y="224">ﾌ</text><text y="238">ﾔ</text><text y="252">ﾛ</text><text y="266">ﾝ</text>
+    <text y="280" class="col-head">8</text>
+  </g>
+  <!-- ── Column 28  x=456 ── -->
+  <g class="s28 col" transform="translate(456,0)">
+    <text y="0">5</text><text y="14">3</text><text y="28">ﾉ</text><text y="42">ｴ</text><text y="56">ｱ</text>
+    <text y="70">ﾎ</text><text y="84">ﾃ</text><text y="98">ﾏ</text><text y="112">ｹ</text><text y="126">ﾒ</text>
+    <text y="140">ﾊ</text><text y="154">ﾐ</text><text y="168">ﾋ</text><text y="182">ｰ</text><text y="196">ｳ</text>
+    <text y="210">ｼ</text><text y="224">ﾅ</text><text y="238">ﾓ</text><text y="252">ﾆ</text><text y="266">ｻ</text>
+    <text y="280" class="col-head">ﾜ</text>
+  </g>
+  <!-- ── Column 29  x=472 ── -->
+  <g class="s29 col" transform="translate(472,0)">
+    <text y="0">ﾂ</text><text y="14">ｵ</text><text y="28">ﾘ</text><text y="42">ｱ</text><text y="56">ﾎ</text>
+    <text y="70">ﾃ</text><text y="84">ﾏ</text><text y="98">ｹ</text><text y="112">ﾒ</text><text y="126">0</text>
+    <text y="140">1</text><text y="154">0</text><text y="168">1</text><text y="182">1</text><text y="196">0</text>
+    <text y="210">1</text><text y="224">0</text><text y="238">0</text><text y="252">1</text><text y="266">1</text>
+    <text y="280" class="col-head">0</text>
+  </g>
+  <!-- ── Column 30  x=488 ── -->
+  <g class="s30 col" transform="translate(488,0)">
+    <text y="0">ﾊ</text><text y="14">ﾐ</text><text y="28">ﾋ</text><text y="42">ｰ</text><text y="56">ｳ</text>
+    <text y="70">ｼ</text><text y="84">ﾅ</text><text y="98">ﾓ</text><text y="112">ﾆ</text><text y="126">ｻ</text>
+    <text y="140">ﾜ</text><text y="154">ﾂ</text><text y="168">ｵ</text><text y="182">ﾘ</text><text y="196">ｱ</text>
+    <text y="210">ﾎ</text><text y="224">ﾃ</text><text y="238">ﾏ</text><text y="252">ｹ</text><text y="266">ﾒ</text>
+    <text y="280" class="col-head">7</text>
+  </g>
+  <!-- ── Column 31  x=504 ── -->
+  <g class="s31 col" transform="translate(504,0)">
+    <text y="0">ｦ</text><text y="14">ｲ</text><text y="28">ｸ</text><text y="42">ｺ</text><text y="56">ｿ</text>
+    <text y="70">ﾁ</text><text y="84">ﾄ</text><text y="98">ﾉ</text><text y="112">ﾌ</text><text y="126">ﾔ</text>
+    <text y="140">ﾗ</text><text y="154">ﾛ</text><text y="168">ﾝ</text><text y="182">0</text><text y="196">1</text>
+    <text y="210">Z</text><text y="224">7</text><text y="238">ﾆ</text><text y="252">ｻ</text><text y="266">ﾜ</text>
+    <text y="280" class="col-head">ﾂ</text>
+  </g>
+  <!-- ── Column 32  x=520 ── -->
+  <g class="s32 col" transform="translate(520,0)">
+    <text y="0">ｵ</text><text y="14">ﾘ</text><text y="28">ｱ</text><text y="42">ﾎ</text><text y="56">ﾃ</text>
+    <text y="70">ﾏ</text><text y="84">ｹ</text><text y="98">ﾒ</text><text y="112">ﾊ</text><text y="126">ﾐ</text>
+    <text y="140">ﾋ</text><text y="154">ｰ</text><text y="168">ｳ</text><text y="182">ｼ</text><text y="196">ﾅ</text>
+    <text y="210">ﾓ</text><text y="224">ﾆ</text><text y="238">ｻ</text><text y="252">ﾜ</text><text y="266">ﾂ</text>
+    <text y="280" class="col-head">ｵ</text>
+  </g>
+  <!-- ── Column 33  x=536 ── -->
+  <g class="s33 col" transform="translate(536,0)">
+    <text y="0">ﾘ</text><text y="14">ｱ</text><text y="28">ﾎ</text><text y="42">ﾃ</text><text y="56">ﾏ</text>
+    <text y="70">ｹ</text><text y="84">ﾒ</text><text y="98">0</text><text y="112">1</text><text y="126">ﾋ</text>
+    <text y="140">ｦ</text><text y="154">ﾁ</text><text y="168">ﾌ</text><text y="182">ﾔ</text><text y="196">ﾛ</text>
+    <text y="210">ﾝ</text><text y="224">N</text><text y="238">ﾈ</text><text y="252">ｺ</text><text y="266">ﾓ</text>
+    <text y="280" class="col-head">ｰ</text>
+  </g>
+  <!-- ── Column 34  x=552 ── -->
+  <g class="s34 col" transform="translate(552,0)">
+    <text y="0">ｳ</text><text y="14">ﾗ</text><text y="28">Z</text><text y="42">ｼ</text><text y="56">ﾅ</text>
+    <text y="70">7</text><text y="84">ﾆ</text><text y="98">ｻ</text><text y="112">4</text><text y="126">ﾔ</text>
+    <text y="140">ｹ</text><text y="154">0</text><text y="168">ﾒ</text><text y="182">9</text><text y="196">ﾊ</text>
+    <text y="210">1</text><text y="224">ﾋ</text><text y="238">ｦ</text><text y="252">ﾁ</text><text y="266">ﾌ</text>
+    <text y="280" class="col-head">ﾔ</text>
+  </g>
+  <!-- ── Column 35  x=568 ── -->
+  <g class="s35 col" transform="translate(568,0)">
+    <text y="0">ﾛ</text><text y="14">ﾝ</text><text y="28">8</text><text y="42">5</text><text y="56">3</text>
+    <text y="70">ﾉ</text><text y="84">ｴ</text><text y="98">ｱ</text><text y="112">0</text><text y="126">1</text>
+    <text y="140">ﾋ</text><text y="154">ｦ</text><text y="168">ﾁ</text><text y="182">ﾌ</text><text y="196">ﾔ</text>
+    <text y="210">ﾛ</text><text y="224">ﾝ</text><text y="238">N</text><text y="252">ﾈ</text><text y="266">ｺ</text>
+    <text y="280" class="col-head">ﾓ</text>
+  </g>
+  <!-- ── Column 36  x=584 ── -->
+  <g class="s36 col" transform="translate(584,0)">
+    <text y="0">ｰ</text><text y="14">ｳ</text><text y="28">ﾗ</text><text y="42">Z</text><text y="56">ｼ</text>
+    <text y="70">ﾅ</text><text y="84">7</text><text y="98">ﾆ</text><text y="112">ｻ</text><text y="126">4</text>
+    <text y="140">ﾔ</text><text y="154">ｹ</text><text y="168">0</text><text y="182">ﾒ</text><text y="196">9</text>
+    <text y="210">ﾊ</text><text y="224">1</text><text y="238">ﾋ</text><text y="252">ｦ</text><text y="266">ﾁ</text>
+    <text y="280" class="col-head">ﾌ</text>
+  </g>
+  <!-- ── Column 37  x=600 ── -->
+  <g class="s37 col" transform="translate(600,0)">
+    <text y="0">1</text><text y="14">0</text><text y="28">0</text><text y="42">1</text><text y="56">1</text>
+    <text y="70">0</text><text y="84">1</text><text y="98">0</text><text y="112">ﾈ</text><text y="126">ｺ</text>
+    <text y="140">ﾓ</text><text y="154">ｰ</text><text y="168">ｳ</text><text y="182">ﾗ</text><text y="196">Z</text>
+    <text y="210">ｼ</text><text y="224">ﾅ</text><text y="238">7</text><text y="252">ﾆ</text><text y="266">ｻ</text>
+    <text y="280" class="col-head">4</text>
+  </g>
+  <!-- ── Column 38  x=616 ── -->
+  <g class="s38 col" transform="translate(616,0)">
+    <text y="0">ﾔ</text><text y="14">ｹ</text><text y="28">0</text><text y="42">ﾒ</text><text y="56">9</text>
+    <text y="70">ﾊ</text><text y="84">1</text><text y="98">ﾋ</text><text y="112">ｦ</text><text y="126">ﾁ</text>
+    <text y="140">ﾌ</text><text y="154">ﾔ</text><text y="168">ﾛ</text><text y="182">ﾝ</text><text y="196">8</text>
+    <text y="210">5</text><text y="224">3</text><text y="238">ﾉ</text><text y="252">ｴ</text><text y="266">ｱ</text>
+    <text y="280" class="col-head">ﾎ</text>
+  </g>
+  <!-- ── Column 39  x=632 ── -->
+  <g class="s39 col" transform="translate(632,0)">
+    <text y="0">ﾃ</text><text y="14">ﾏ</text><text y="28">ｹ</text><text y="42">ﾒ</text><text y="56">ﾊ</text>
+    <text y="70">ﾐ</text><text y="84">ﾋ</text><text y="98">ｰ</text><text y="112">ｳ</text><text y="126">ｼ</text>
+    <text y="140">ﾅ</text><text y="154">ﾓ</text><text y="168">ﾆ</text><text y="182">ｻ</text><text y="196">ﾜ</text>
+    <text y="210">ﾂ</text><text y="224">ｵ</text><text y="238">ﾘ</text><text y="252">ｱ</text><text y="266">ﾎ</text>
+    <text y="280" class="col-head">ﾃ</text>
+  </g>
+  <!-- ── Column 40  x=648 ── -->
+  <g class="s40 col" transform="translate(648,0)">
+    <text y="0">ﾏ</text><text y="14">ｹ</text><text y="28">ﾒ</text><text y="42">0</text><text y="56">1</text>
+    <text y="70">ﾋ</text><text y="84">ｦ</text><text y="98">ﾁ</text><text y="112">ﾌ</text><text y="126">ﾔ</text>
+    <text y="140">ﾛ</text><text y="154">ﾝ</text><text y="168">N</text><text y="182">ﾈ</text><text y="196">ｺ</text>
+    <text y="210">ﾓ</text><text y="224">ｰ</text><text y="238">ｳ</text><text y="252">ﾗ</text><text y="266">Z</text>
+    <text y="280" class="col-head">ｼ</text>
+  </g>
+  <!-- ── Column 41  x=664 ── -->
+  <g class="s41 col" transform="translate(664,0)">
+    <text y="0">ﾅ</text><text y="14">7</text><text y="28">ﾆ</text><text y="42">ｻ</text><text y="56">4</text>
+    <text y="70">ﾔ</text><text y="84">ｹ</text><text y="98">0</text><text y="112">ﾒ</text><text y="126">9</text>
+    <text y="140">ﾊ</text><text y="154">1</text><text y="168">ﾋ</text><text y="182">ｦ</text><text y="196">ﾁ</text>
+    <text y="210">ﾌ</text><text y="224">ﾔ</text><text y="238">ﾛ</text><text y="252">ﾝ</text><text y="266">8</text>
+    <text y="280" class="col-head">5</text>
+  </g>
+  <!-- ── Column 42  x=680 ── -->
+  <g class="s42 col" transform="translate(680,0)">
+    <text y="0">3</text><text y="14">ﾉ</text><text y="28">ｴ</text><text y="42">ｱ</text><text y="56">ﾎ</text>
+    <text y="70">ﾃ</text><text y="84">ﾏ</text><text y="98">ｹ</text><text y="112">ﾒ</text><text y="126">ﾊ</text>
+    <text y="140">ﾐ</text><text y="154">ﾋ</text><text y="168">ｰ</text><text y="182">ｳ</text><text y="196">ｼ</text>
+    <text y="210">ﾅ</text><text y="224">ﾓ</text><text y="238">ﾆ</text><text y="252">ｻ</text><text y="266">ﾜ</text>
+    <text y="280" class="col-head">ﾂ</text>
+  </g>
+  <!-- ── Column 43  x=696 ── -->
+  <g class="s43 col" transform="translate(696,0)">
+    <text y="0">ｵ</text><text y="14">ﾘ</text><text y="28">ｱ</text><text y="42">ﾎ</text><text y="56">ﾃ</text>
+    <text y="70">ﾏ</text><text y="84">ｹ</text><text y="98">ﾒ</text><text y="112">0</text><text y="126">1</text>
+    <text y="140">ﾋ</text><text y="154">ｦ</text><text y="168">ﾁ</text><text y="182">ﾌ</text><text y="196">ﾔ</text>
+    <text y="210">ﾛ</text><text y="224">ﾝ</text><text y="238">N</text><text y="252">ﾈ</text><text y="266">ｺ</text>
+    <text y="280" class="col-head">ﾓ</text>
+  </g>
+  <!-- ── Column 44  x=712 ── -->
+  <g class="s44 col" transform="translate(712,0)">
+    <text y="0">ｰ</text><text y="14">ｳ</text><text y="28">ﾗ</text><text y="42">Z</text><text y="56">ｼ</text>
+    <text y="70">ﾅ</text><text y="84">7</text><text y="98">ﾆ</text><text y="112">ｻ</text><text y="126">4</text>
+    <text y="140">ﾔ</text><text y="154">ｹ</text><text y="168">0</text><text y="182">ﾒ</text><text y="196">9</text>
+    <text y="210">ﾊ</text><text y="224">1</text><text y="238">ﾋ</text><text y="252">ｦ</text><text y="266">ﾁ</text>
+    <text y="280" class="col-head">ﾌ</text>
+  </g>
+  <!-- ── Column 45  x=728 ── -->
+  <g class="s45 col" transform="translate(728,0)">
+    <text y="0">ﾔ</text><text y="14">ﾛ</text><text y="28">ﾝ</text><text y="42">8</text><text y="56">5</text>
+    <text y="70">3</text><text y="84">ﾉ</text><text y="98">ｴ</text><text y="112">ｱ</text><text y="126">ﾎ</text>
+    <text y="140">ﾃ</text><text y="154">ﾏ</text><text y="168">ｹ</text><text y="182">ﾒ</text><text y="196">ﾊ</text>
+    <text y="210">ﾐ</text><text y="224">ﾋ</text><text y="238">ｰ</text><text y="252">ｳ</text><text y="266">ｼ</text>
+    <text y="280" class="col-head">ﾅ</text>
+  </g>
+  <!-- ── Column 46  x=744 ── -->
+  <g class="s46 col" transform="translate(744,0)">
+    <text y="0">ﾓ</text><text y="14">ﾆ</text><text y="28">ｻ</text><text y="42">ﾜ</text><text y="56">ﾂ</text>
+    <text y="70">ｵ</text><text y="84">ﾘ</text><text y="98">ｱ</text><text y="112">ﾎ</text><text y="126">ﾃ</text>
+    <text y="140">ﾏ</text><text y="154">ｹ</text><text y="168">ﾒ</text><text y="182">0</text><text y="196">1</text>
+    <text y="210">ﾋ</text><text y="224">ｦ</text><text y="238">ﾁ</text><text y="252">ﾌ</text><text y="266">ﾔ</text>
+    <text y="280" class="col-head">ﾛ</text>
+  </g>
+  <!-- ── Column 47  x=760 ── -->
+  <g class="s47 col" transform="translate(760,0)">
+    <text y="0">ﾝ</text><text y="14">8</text><text y="28">5</text><text y="42">3</text><text y="56">ﾉ</text>
+    <text y="70">ｴ</text><text y="84">ｱ</text><text y="98">ﾎ</text><text y="112">ﾃ</text><text y="126">ﾏ</text>
+    <text y="140">ｹ</text><text y="154">ﾒ</text><text y="168">ﾊ</text><text y="182">ﾐ</text><text y="196">ﾋ</text>
+    <text y="210">ｰ</text><text y="224">ｳ</text><text y="238">ｼ</text><text y="252">ﾅ</text><text y="266">ﾓ</text>
+    <text y="280" class="col-head">ﾆ</text>
+  </g>
+  <!-- ── Column 48  x=776 ── -->
+  <g class="s48 col" transform="translate(776,0)">
+    <text y="0">ｻ</text><text y="14">ﾜ</text><text y="28">ﾂ</text><text y="42">ｵ</text><text y="56">ﾘ</text>
+    <text y="70">ｱ</text><text y="84">ﾎ</text><text y="98">ﾃ</text><text y="112">ﾏ</text><text y="126">ｹ</text>
+    <text y="140">ﾒ</text><text y="154">0</text><text y="168">1</text><text y="182">ﾋ</text><text y="196">ｦ</text>
+    <text y="210">ﾁ</text><text y="224">ﾌ</text><text y="238">ﾔ</text><text y="252">ﾛ</text><text y="266">ﾝ</text>
+    <text y="280" class="col-head">8</text>
+  </g>
+
+  <!-- ── Column 49  x=792 ── -->
+  <g class="s49 col" transform="translate(792,0)">
+    <text y="0">5</text><text y="14">3</text><text y="28">ﾉ</text><text y="42">ｴ</text><text y="56">ｱ</text>
+    <text y="70">ﾎ</text><text y="84">ﾃ</text><text y="98">ﾏ</text><text y="112">ｹ</text><text y="126">ﾒ</text>
+    <text y="140">ﾊ</text><text y="154">ﾐ</text><text y="168">ﾋ</text><text y="182">ｰ</text><text y="196">ｳ</text>
+    <text y="210">ｼ</text><text y="224">ﾅ</text><text y="238">ﾓ</text><text y="252">ﾆ</text><text y="266">ｻ</text>
+    <text y="280" class="col-head">ﾜ</text>
+  </g>
+
+  <!-- Fade overlay so the tops of columns fade out naturally -->
+  <rect width="800" height="400" fill="url(#fade)" mask="url(#fadeMask)"/>
+</svg>
